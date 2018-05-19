@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<title>Capstone Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+    }
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="homepage.html">Portfolio</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="homepage.html">My Bio/Resume</a></li>
+                <li><a href="cv.html">Cover Letter</a></li>
+                <li><a href="philosophy.html">Philosophy</a></li>
+                <li><a href="awards.html">Credentials/Awards</a></li>
+                <li class="active"><a href="capstone.html">Capstone</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <br><br>
+        <h4><b>Capstone Project</b></h4>
+        <p class="w3-text-grey">ShareShake Rental Web App</p>
+    </div>
+    <div class="w3-bar-block">
+        <a href="#vision" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECT VISION</a>
+        <a href="#requirement" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECT REQUIREMENT</a>
+        <a href="#plan" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECT PLAN</a>
+        <a href="#analysis" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>ANALYSIS & DESIGN</a>
+        <a href="#wireframe" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>WIREFRAME</a>
+        <a href="#status" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>STATUS REPORT</a>
+        <a href="#implement" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>SYSTEM IMPLEMENTATION</a>
+    </div>
+
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+
+
+    <div class="w3-container w3-padding-large" id="vision">
+        <h1>Project Vision</h1>
+        <p>ShareShake Rental Web App started with ideas and values in share economy. We have defined our clients and their view to be those people interested in peer-to-peer based sharing of access to goods and services,
+        Specifically we are interested in providing a platform that where clients can rent items that are needed only temporarily and at the same time they can also rent out unused items to other clients to earn money.
+        On out platform, users can make posting for the items they want to rent out, and they can also search and find items they want to rent from other users.
+        </p><a href="T17_Project%20Vision.docx"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download File
+    </button></a>
+        <hr>
+
+    </div>
+    <div class="w3-container w3-padding-large" id="requirement">
+        <h1>Project Requirement</h1>
+        <h4>To explain a bit of the project requirement:
+        </h4><p>It is a web application accessible from anywhere with internet connection, that is responsible for providing the platform to rent and borrow products.
+        </p><p>Users must be able to make payments for items using PayPal
+        </p><p>  Administrators must be able to manage and access user's account information
+        </p><p> Owners must be able to see traffic information relating to the web application to help business decisions
+        </p><p> Users must be able to create accounts to use the web application to be able to lend or borrow items
+        </p>
+        <a href="T17_High%20Level%20Requirements.doc"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+            <i class="fa fa-download w3-margin-right"></i>Download File
+        </button></a>
+        <hr>
+
+    </div>
+
+    <div class="w3-container w3-padding-large" id="plan">
+        <h1>Project Plan</h1>
+        <p>
+        Kyung Neung Lee, Haitham AhmedKhalil, Faheem Choudhury and Karthik Sankar Prasad formed the Team 17 for ShareShake project.
+            Our project is to provide rental specific web application platform started on September 15, 2017 and planned to complete by March 30, 2018.
+            Which is an expansion into an area of the rental specific market which has not seen any developments and has an increasing demand.
+            Once completed, the platform will allow users rent any categories of items without having to purchase the product for the full price.
+
+    </p>
+        <a href="T17_Project%20Plan_Team%20Charter.docx"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+            <i class="fa fa-download w3-margin-right"></i>Download File
+        </button></a>
+        <hr>
+
+    </div>
+
+    <div class="w3-container w3-padding-large" id="analysis">
+        <h1>Analysis and Design</h1>
+        <p>
+            We defiend renter and rentier as general group of users to be interacting with our web application.
+        </p><p>The application should allow users to :
+            </p><p>- Make account and edit information.
+    </p><p>- Create, view, and search postings,
+    </p><p>- Make transaction for the wanted items.
+        </p>
+        <a href="T17_AnalysisDesign.docx"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+            <i class="fa fa-download w3-margin-right"></i>Download File
+        </button></a>
+        <hr>
+
+    </div>
+
+
+    <!-- Images of Me -->
+    <div class="w3-row-padding w3-padding-16" id="wireframe">
+        <h1>Wireframes</h1>
+        <div class="w3-col m6">
+            <img src="w1.PNG" alt="Me" style="width:100%">
+        </div>
+        <div class="w3-col m6">
+            <img src="w2.png" alt="Me" style="width:100%">
+        </div>
+        <a href="T127-2017-T17%20%20Rental%20Web%20App.pdf"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+            <i class="fa fa-download w3-margin-right"></i>Download File
+        </button></a>
+    </div>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h1 id="status">Status Reports</h1>
+        <!-- Pricing Tables -->
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                    <li class="w3-black w3-xlarge w3-padding-32">Status Report 1</li>
+                    <li class="w3-padding-16">HTML/Javascript</li>
+                    <li class="w3-padding-16">Presentation Layers</li>
+                    <li class="w3-padding-16">UI/UX</li>
+                    <li class="w3-padding-16">MySQL Database</li>
+                    <li class="w3-padding-16">
+                        <h2>Report Period</h2>
+                        <span class="w3-opacity">Jan 29,2018 - Feb 8, 2018</span>
+                    </li>
+
+                    <li class="w3-light-grey w3-padding-24">
+                        <a href="T17_Project%20Status%20Report.docx"><button class="w3-button w3-teal w3-padding-large w3-hover-black">Download</button></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                    <li class="w3-teal w3-xlarge w3-padding-32">Status Report 2</li>
+                    <li class="w3-padding-16">Amazon AWS</li>
+                    <li class="w3-padding-16">SQL Query Script</li>
+                    <li class="w3-padding-16">User Functionality</li>
+                    <li class="w3-padding-16">Controller Layer</li>
+                    <li class="w3-padding-16">
+                        <h2>Report Period</h2>
+                        <span class="w3-opacity">Feb 8, 2018 - Feb 19, 2018</span>
+                    </li>
+
+                    <li class="w3-light-grey w3-padding-24">
+                        <a href="T17_Project%20Status%20Report%202.docx"><button class="w3-button w3-teal w3-padding-large w3-hover-black">Download</button></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-third">
+                <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                    <li class="w3-black w3-xlarge w3-padding-32">Status Report 3</li>
+                    <li class="w3-padding-16">PayPal API</li>
+                    <li class="w3-padding-16">Email Notification</li>
+                    <li class="w3-padding-16">Data Upload</li>
+                    <li class="w3-padding-16">UI Design Upgrade</li>
+                    <li class="w3-padding-16">
+                        <h2>Report Period</h2>
+                        <span class="w3-opacity">Feb 20,2018 - Mar 26, 2018</span>
+                    </li>
+
+                    <li class="w3-light-grey w3-padding-24">
+                        <a href="T17_ProjectStatusReport3.docx"><button class="w3-button w3-teal w3-padding-large w3-hover-black">Download</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h1 id="implement">System Implementation</h1>
+        <p>90% complete with email confirmation functionality to be added and loaded on to AWS server</p>
+
+
+        <p>Completion</p>
+        <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:90%">90%</div>
+        </div>
+
+        <p>
+            <a href="Share%20Shake%20Demo.pptx"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                <i class="fa fa-download w3-margin-right"></i>Download Demo PPT
+            </button></a>
+
+            <a href="ShareShake.rar"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                <i class="fa fa-download w3-margin-right"></i>Download Code
+            </button></a>
+        </p>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+    <div class="w3-black w3-center w3-padding-24"></div>
+
+    <!-- End page content -->
+</div>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
